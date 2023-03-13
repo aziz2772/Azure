@@ -4,12 +4,6 @@
     "parameters": {
         "virtualMachines_Stage_name": {
             "value": "stage2"
-        },
-        "disks_Stage_OsDisk_1_5ec18ef59e71492ab1552c39b7559068_externalid": {
-            "value": null
-        },
-        "networkInterfaces_stage363_externalid": {
-            "value": null
         }
     }
 }
