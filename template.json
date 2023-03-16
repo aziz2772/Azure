@@ -3,15 +3,15 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_Stage_name": {
-            "defaultValue": "Stage",
+            "defaultValue": "Stage2",
             "type": "String"
         },
-        "disks_Stage_OsDisk_1_5ec18ef59e71492ab1552c39b7559068_externalid": {
-            "defaultValue": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Compute/disks/Stage_OsDisk_1_5ec18ef59e71492ab1552c39b7559068",
+        "disks_Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3_externalid": {
+            "defaultValue": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Compute/disks/Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3",
             "type": "String"
         },
-        "networkInterfaces_stage363_externalid": {
-            "defaultValue": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Network/networkInterfaces/stage363",
+        "networkInterfaces_stage942_externalid": {
+            "defaultValue": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Network/networkInterfaces/stage942",
             "type": "String"
         }
     },
@@ -21,7 +21,10 @@
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2022-11-01",
             "name": "[parameters('virtualMachines_Stage_name')]",
-            "location": "westus3",
+            "location": "eastus2",
+            "identity": {
+                "type": "SystemAssigned"
+            },
             "properties": {
                 "hardwareProfile": {
                     "vmSize": "Standard_D2s_v3"
@@ -35,17 +38,18 @@
                     },
                     "osDisk": {
                         "osType": "Windows",
-                        "name": "[concat(parameters('virtualMachines_Stage_name'), '_OsDisk_1_5ec18ef59e71492ab1552c39b7559068')]",
+                        "name": "[concat(parameters('virtualMachines_Stage_name'), '_OsDisk_1_7d872957d6c7402e894f7cfc875947e3')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
                             "storageAccountType": "Premium_LRS",
-                            "id": "[parameters('disks_Stage_OsDisk_1_5ec18ef59e71492ab1552c39b7559068_externalid')]"
+                            "id": "[parameters('disks_Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3_externalid')]"
                         },
                         "deleteOption": "Delete",
                         "diskSizeGB": 127
                     },
-                    "dataDisks": []
+                    "dataDisks": [],
+                    "diskControllerType": "SCSI"
                 },
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_Stage_name')]",
@@ -64,10 +68,17 @@
                     "allowExtensionOperations": true,
                     "requireGuestProvisionSignal": true
                 },
+                "securityProfile": {
+                    "uefiSettings": {
+                        "secureBootEnabled": true,
+                        "vTpmEnabled": true
+                    },
+                    "securityType": "TrustedLaunch"
+                },
                 "networkProfile": {
                     "networkInterfaces": [
                         {
-                            "id": "[parameters('networkInterfaces_stage363_externalid')]",
+                            "id": "[parameters('networkInterfaces_stage942_externalid')]",
                             "properties": {
                                 "deleteOption": "Detach"
                             }
