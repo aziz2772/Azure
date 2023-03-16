@@ -3,7 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_Stage_name": {
-            "value": "stage2"
+            "value": null
+        },
+        "networkInterfaces_stage363_name": {
+            "value": null
+        },
+        "publicIPAddresses_Stage_ip_name": {
+            "value": null
+        },
+        "virtualNetworks_Stage_vnet_name": {
+            "value": null
+        },
+        "networkSecurityGroups_Stage_nsg_name": {
+            "value": null
         }
     }
 }
