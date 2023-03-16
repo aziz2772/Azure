@@ -1,21 +1,21 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_Stage_name": {
-            "value": null
+            "value": "myVM"
         },
         "networkInterfaces_stage363_name": {
-            "value": null
+            "value": "myNIC"
         },
         "publicIPAddresses_Stage_ip_name": {
-            "value": null
+            "value": "myPublicIP"
         },
         "virtualNetworks_Stage_vnet_name": {
-            "value": null
+            "value": "myVnet"
         },
         "networkSecurityGroups_Stage_nsg_name": {
-            "value": null
+            "value": "myNSG"
         }
     }
 }
