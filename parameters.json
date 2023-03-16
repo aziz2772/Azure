@@ -3,13 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_Stage_name": {
-            "value": "myvm"
+            "value": null
         },
-        "disks_Stage_OsDisk_1_5ec18ef59e71492ab1552c39b7559068_externalid": {
-            "value": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Compute/disks/Stage_OsDisk_1_5ec18ef59e71492ab1552c39b7559068"
+        "networkInterfaces_stage942_name": {
+            "value": null
         },
-        "networkInterfaces_stage363_externalid": {
-            "value": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Network/networkInterfaces/stage363"
+        "publicIPAddresses_Stage_ip_name": {
+            "value": null
+        },
+        "virtualNetworks_Stage_vnet_name": {
+            "value": null
+        },
+        "networkSecurityGroups_Stage_nsg_name": {
+            "value": null
         }
     }
 }
