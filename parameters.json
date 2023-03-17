@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_Stage_name": {
-            "value": "Stage"
+            "value": null
         },
         "disks_Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3_externalid": {
             "value": null
