@@ -1,7 +1,20 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {},
+    "parameters": {
+        "virtualMachines_Stage_name": {
+            "defaultValue": "Stage",
+            "type": "String"
+        },
+        "disks_Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3_externalid": {
+            "defaultValue": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Compute/disks/Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3",
+            "type": "String"
+        },
+        "networkInterfaces_stage942_externalid": {
+            "defaultValue": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Network/networkInterfaces/stage942",
+            "type": "String"
+        }
+    },
     "variables": {},
     "resources": [
         {
