@@ -11,8 +11,7 @@
             "type": "String"
         },
         "networkInterfaces_stage942_externalid": {
-            "defaultValue": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Network/networkInterfaces/stage942",
-            "type": "String"
+      
         }
     },
     "variables": {},
