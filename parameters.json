@@ -8,9 +8,7 @@
         "disks_Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3_externalid": {
             "value": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Compute/disks/Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3"
         },
-        "networkInterfaces_stage942_externalid": {
-            "value": "/subscriptions/4bcc6684-fdb6-47fd-bf3c-bea08c4d2fc0/resourceGroups/RNeoLedge/providers/Microsoft.Network/networkInterfaces/stage942"
-        }
+  
         "adminPassword": {
             "value": "MyPassword123"
         }
