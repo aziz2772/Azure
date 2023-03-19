@@ -76,10 +76,7 @@
                 "networkProfile": {
                     "networkInterfaces": [
                         {
-                            "id": "[parameters('networkInterfaces_stage942_externalid')]",
-                            "properties": {
-                                "deleteOption": "Detach"
-                            }
+                          
                         }
                     ]
                 },
