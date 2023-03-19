@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmName": {
-      "value": "stage942"
+      "value": "stage942-nic"
     },
     "adminUsername": {
       "value": "my-admin-user"
