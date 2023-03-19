@@ -41,10 +41,11 @@
                         "name": "[concat(parameters('virtualMachines_Stage_name'), '_OsDisk_1_7d872957d6c7402e894f7cfc875947e3')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
-                        "managedDisk": {
-                            "storageAccountType": "Premium_LRS",
-                            "id": "[parameters('disks_Stage_OsDisk_1_7d872957d6c7402e894f7cfc875947e3_externalid')]"
-                        },
+                       "managedDisk": {
+						"storageAccountType": "Premium_LRS",
+						"id": "[resourceId('Microsoft.Compute/disks', concat(parameters('virtualMachines_Stage_name'), '_OsDisk_1_7d872957d6c7402e894f7cfc875947e3'))]"
+},
+
                         "deleteOption": "Delete",
                         "diskSizeGB": 127
                     },
