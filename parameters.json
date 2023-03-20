@@ -15,7 +15,7 @@
       "value": "stagestorageaccount3"
     },
     "networkInterfaceName": {
-      "value": "stage9422"
+      "value": "acstage"
     },
     "virtualNetworkName": {
       "value": "Stage-vnett"
