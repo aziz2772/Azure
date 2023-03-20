@@ -18,7 +18,7 @@
       "value": "stage942"
     },
     "virtualNetworkName": {
-      "value": "Stage-vnet"
+      "value": "Stage-vnett"
     },
     "subnetName": {
       "value": "default"
