@@ -25,6 +25,9 @@
     },
     "networkSecurityGroupName": {
       "value": "mynetworksecuritygroup"
-    } 
+    },
+    "publicIpAddressName": {
+      "value": "ippublicstage"
+    }
   }
 }
