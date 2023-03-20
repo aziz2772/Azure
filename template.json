@@ -152,5 +152,15 @@
 }
 }
 }
-]
+],
+  "outputs": {
+    "virtualMachineName": {
+      "type": "string",
+      "value": "[parameters('vmName')]"
+    },
+    "virtualMachineResourceId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Compute/virtualMachines', parameters('vmName'))]"
+    }
+  }
 }
