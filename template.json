@@ -25,9 +25,6 @@
     },
     "networkSecurityGroupName": {
       "type": "string"
-    },
-	"publicIpAddressName": {
-      "type": "string"
     }
   },
   "resources": [
@@ -96,7 +93,6 @@
       "dependsOn": [
         "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
         "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
-		"[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIpAddressName'))]"
       ],
       "properties": {
         "networkSecurityGroup": {
@@ -107,9 +103,6 @@
             "name": "ipconfig1",
             "properties": {
               "privateIPAllocationMethod": "Dynamic",
-			   "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIpAddressName'))]"
-              },
               "subnet": {
                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'), parameters('subnetName'))]"
 				}
