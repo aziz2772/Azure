@@ -3,13 +3,25 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmName": {
-      "value": "stage942"
+      "value": "stage22"
     },
     "adminUsername": {
-      "value": "my-admin-user"
+      "value": "azizaziz"
     },
     "adminPassword": {
-      "value": "My$3cur3P@$$w0rd"
+      "value": "Your$3cur3P@$$w0rd"
+    },
+    "storageAccountName": {
+      "value": "stagestorageaccount2"
+    },
+    "networkInterfaceName": {
+      "value": "stage942"
+    },
+    "virtualNetworkName": {
+      "value": "Stage-vnet"
+    },
+    "subnetName": {
+      "value": "default"
     }
   }
 }
